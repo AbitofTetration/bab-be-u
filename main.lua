@@ -273,7 +273,7 @@ bab arguments!
 
   --load some fonts
   fonts = {}
-  fonts["8bitoperator"] = love.graphics.newFont(10, "mono"); -- "assets/fonts/8bitoperator.ttf", 
+  fonts["8bitoperator"] = love.graphics.setNewFont("assets/fonts/8bitoperator.ttf", 10); -- "assets/fonts/8bitoperator.ttf", 
   fonts["metanumber"] = love.graphics.newImageFont("assets/fonts/metanumber.png", '1234567890');
   registerSound("move", 0.4)
   registerSound("mous sele", 0.3)
