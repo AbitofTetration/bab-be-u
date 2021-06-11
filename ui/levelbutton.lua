@@ -72,7 +72,7 @@ function level_button.new(file, extra)
       local _,lines = font:getWrap(self:getName():upper(), self:getWidth() - 12)
       local height = #lines * font:getHeight()
 
-      love.graphics.printf(spookmode and (math.random(1,100) == 1 and "stop it" or "help") or self:getName():upper(), 6, 40 - height / 2, self:getWidth() - 12, "center")
+      love.graphics.print(spookmode and (math.random(1,100) == 1 and "stop it" or "help") or self:getName():upper(), 6, 40 - height / 2, self:getWidth() - 12, "center")
     end
   end
 
